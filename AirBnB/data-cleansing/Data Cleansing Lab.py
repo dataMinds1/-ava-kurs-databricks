@@ -49,6 +49,7 @@ rawDF.count()
 # COMMAND ----------
 
 cnt = rawDF.count()
+
 assert cnt == 3384, f"Number of records, expected 3384 found {str(cnt)}"
 assert rawDF.schema[0].dataType == IntegerType(), f"Column `id` excepted to be IntegerType, got {str(rawDF.schema[0].dataType)}"
 print("Tests passed.")
